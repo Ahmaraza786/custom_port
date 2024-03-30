@@ -3,14 +3,15 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import logo from "./logo.png"
 
 
+
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <nav className="flex justify-between items-center sticky top-0 py-6 px-10">
-      <div className="flex items-center  text-sm">
-      <img src={logo} style={{ height: '56px' }} alt='logo' />
-
+      <div className="flex items-center text-sm">
+        <img src={logo} style={{ height: '56px' }} alt='logo' />
       </div>
       <div className="md:flex hidden gap-8">
         <a href="#about" className="hover:text-gray-600">About</a>
@@ -31,7 +32,7 @@ const Header = () => {
       <div
         className={`${
           isMenuOpen ? 'flex' : 'hidden'
-        } absolute top-16 right-0 bg-white shadow-md py-2 px-4 rounded-md flex-col items-center gap-8 z-50`}
+        } absolute top-16 right-5 bg-white shadow-md py-2 px-4 rounded-md flex-col items-center gap-8 z-50`}
       >
         <a href="#about" className="hover:text-gray-600" onClick={() => setIsMenuOpen(false)}>About</a>
         <a href="#services" className="hover:text-gray-600" onClick={() => setIsMenuOpen(false)}>Services</a>
@@ -43,3 +44,4 @@ const Header = () => {
 };
 
 export default Header;
+
