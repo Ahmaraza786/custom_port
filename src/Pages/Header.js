@@ -7,7 +7,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="flex justify-between items-center py-6 px-10">
+    <nav className="flex justify-between items-center sticky top-0 py-6 px-10">
       <div className="flex items-center  text-sm">
       <img src={logo} style={{ height: '56px' }} alt='logo' />
 

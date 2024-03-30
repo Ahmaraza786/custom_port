@@ -14,7 +14,7 @@ const HeroSection = () => {
       <div className="mb-8">
         <img src={profile} alt="Ahmad" className="rounded-full w-32 h-32 mx-auto" />
       </div>
-      <h1 className="text-4xl md:text-5xl font-bold mb-4">Hi! I'm Ahmad Raza 👋</h1>
+      <h1 className="text-4xl md:text-5xl font-bold mb-4">Hi!  I'm <span style={{ color: '#cc412f' }}>Ahmad Raza</span> 👋</h1>
       <h2 className="text-xl md:text-2xl mb-4">Full Stack Developer.</h2>
       <p className="mb-8 text-gray-700 max-w-md mx-auto">As a fresh MERN Stack Developer, I specialize in MongoDB, Express.js, React, and Node.js to build dynamic, scalable web applications.</p>
       <div className="flex flex-col md:flex-row gap-4">
