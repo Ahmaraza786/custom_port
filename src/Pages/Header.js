@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { MenuIcon, XIcon , MailIcon} from '@heroicons/react/outline';
+import logo from "./logo.png"
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -7,8 +9,8 @@ const Header = () => {
   return (
     <nav className="flex justify-between items-center py-6 px-10">
       <div className="flex items-center  text-sm">
-      <MailIcon className="h-6 w-6 mr-2" />
-        ahmadraza46790gmail.com
+      <img src={logo} style={{ height: '56px' }} />
+
       </div>
       <div className="md:flex hidden gap-8">
         <a href="#about" className="hover:text-gray-600">About</a>
