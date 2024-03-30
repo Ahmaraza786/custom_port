@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { MenuIcon, XIcon , MailIcon} from '@heroicons/react/outline';
+import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import logo from "./logo.png"
 
 
@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <nav className="flex justify-between items-center py-6 px-10">
       <div className="flex items-center  text-sm">
-      <img src={logo} style={{ height: '56px' }} />
+      <img src={logo} style={{ height: '56px' }} alt='logo' />
 
       </div>
       <div className="md:flex hidden gap-8">
